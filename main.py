@@ -18,7 +18,7 @@ from dateutil import tz
 class OrgTodoist:
     def __init__(self):
         self.token = config.TODOIST_TOKEN
-        self.org_file = '/home/tima/org/todoist.org';
+        self.org_file = config.TODOIST_FILE;
 
         self.api = todoist.TodoistAPI(token=self.token)
 
