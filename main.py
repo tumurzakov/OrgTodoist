@@ -1,6 +1,7 @@
 import os, sys, inspect
 
 cmd_folder = os.path.realpath(os.path.abspath(os.path.split(inspect.getfile( inspect.currentframe() ))[0]))
+sys.path.append(os.path.join(cmd_folder))
 sys.path.append(os.path.join(cmd_folder, "./dist/PyOrgMode"))
 sys.path.append(os.path.join(cmd_folder, "./dist/todoist-python"))
 
@@ -9,13 +10,14 @@ import todoist
 import os.path
 import locale
 import dateutil.parser
+import config
 
 from datetime import datetime
 from dateutil import tz
 
 class OrgTodoist:
     def __init__(self):
-        self.token = '21830c40f5ab17f4fb2dee4ceac5ab35a96d97cf'
+        self.token = config.TODOIST_TOKEN
         self.org_file = '/home/tima/org/todoist.org';
 
         self.api = todoist.TodoistAPI(token=self.token)
