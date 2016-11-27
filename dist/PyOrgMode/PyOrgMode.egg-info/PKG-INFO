@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: PyOrgMode
+Version: 0.1
+Summary: Library to interact with org-mode from python
+Home-page: https://github.com/bjonnh/PyOrgMode
+Author: Jonathan BISSON
+Author-email: Jonathan.BISSON@bjonnh.net
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: org-mode
+Platform: UNKNOWN
